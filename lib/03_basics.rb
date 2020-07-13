@@ -19,4 +19,4 @@ def find_42(a)
   return a.include?(42) 
 end
 
-#?
+#magic_array?

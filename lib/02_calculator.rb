@@ -23,5 +23,5 @@ def power (a, b)
 end
 
 def factorial(a)
-  return (1..a).inject(:*) || 1
+  return (1..a).inject(:*) 
 end
