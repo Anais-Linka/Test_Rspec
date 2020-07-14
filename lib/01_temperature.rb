@@ -1,11 +1,8 @@
 
-def FtoC(i)
-	return ((i-32)/1.8).round(2)
-end	
+def ftoc(temperature)
+  return (temperature.to_f-32)*5/9
+end
 
-
-
-
-def CtoF(i)
-	return ((i*1.8)+32).round(2)
-end	
+def ctof(temperature)
+  return (temperature.to_f*9/5)+32
+end

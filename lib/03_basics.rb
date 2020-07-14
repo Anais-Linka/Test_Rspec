@@ -1,22 +1,26 @@
 
-def who_is_bigger(a, b, c)
-  if (a == nil || b == nil || c == nil)
-   return "nil detected"
-  elsif (a > b && a > c)
-    return "a is bigger"
-   elsif (b > a && b > c)
-    return "b is bigger"
-  else 
-    return "c is bigger"
+def who_is_bigger (a, b, c)
+  if a == nil || b == nil || c == nil
+  return "nil detected"
   end
+    array = [a, b, c]
+    if array.max == a
+      return "a is bigger"
+    elsif array.max == b
+      return "b is bigger"
+    else array.max == c
+      return "c is bigger"
+    end
 end
 
-def reverse_upcase_noLTA(str)
-    str.upcase.reverse.delete"LTA"
+def reverse_upcase_noLTA(string)
+  return string.reverse.upcase.delete("LTA")
 end
 
-def find_42(a)
-  return a.include?(42) 
+def array_42(array)
+  return array.include?(42)
 end
 
-#magic_array?
+def magic_array(a)
+  a.flatten.map{|x|x*2}.delete_if{|y|y%3==0}.uniq.sort
+end
